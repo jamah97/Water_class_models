@@ -38,7 +38,7 @@ def main():
 
 	st.subheader("Model Buidling")
 	st.write("About section: Below is an ML interactive ML model builder. The objective is to assess the safety of drinking water based on 9 characteristics (pH value, Hardness, Solids (Total dissolved solids - TDS), Chloramines, Sulfate, Conductivity, Organic_carbon, Trihalomethanes, and Turbidity) to see if the water is safe for human consumption.")
-	st.write("You will be able to select from any of the 9 variables as predictors along with the classifier algorithm and the train test split. By default the independent variable is potability. potability of 1 means water is safe to drink and 0 means water isn't safe to drink. After clicking on model performance, the application will generate the accuracy of the model, classification report, and confusion_matrix. ")
+	st.write("You will be able to select from any of the 9 variables as predictors along with the classifier algorithm and the train test split. By default the independent variable is potability. potability of 1 means water is safe to drink and 0 means water isn't safe to drink. After clicking on model performance, the application will generate the accuracy of the model, classification report, and confusion matrix. ")
 	algorithm = ["K Neighbors Classifier", "Random Forest Classifier", "Logistic Regression", "Decision Tree Classifier", "SVM"]
 	choice = st.selectbox("Select Algorithm",algorithm)
 	testsize = st.slider('Testing size: Select percent of data that will be used as testing data.', 0, 50)
